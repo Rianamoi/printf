@@ -2,34 +2,31 @@
 #define MAIN_H
 
 #include <stdarg.h>
+#include <stdlib.h>
+
+/**
+ * struct printer - format printer struct
+ * @spec: the format specifier
+ * @fn: the function that handles @spec
+ */
+
+typedef struct printer
+{
+	char *spec;
+	int (*fn)(va_list);
+} print_t;
 
 int _putchar(char c);
 int _printf(const char *format, ...);
-int print_char(va_list arg);
-int print_str(va_list arg);
-int print_int(va_list arg);
-int print_ptr(va_list arg);
-int print_unsigned(va_list arg);
-int print_unsignedToBinary(va_list arg);
-int print_oct(va_list arg);
-int print_hex(va_list arg);
-int print_HEX(va_list arg);
-int print_STR (va_list arg);
-void print_binary(unsigned int n, unsigned int* printed);
-int print_hex_base(va_list arg, char _case);
-int print_unsignedIntToHex(unsigned int num, char _case);
+int print_char(va_list ap);
+int print_string(va_list ap);
+int print_space(va_list ap);
+int print_int(va_list ap);
+int print_unsigned(va_list ap);
+int print_octal(va_list ap);
+int print_digit(int num, int *count);
+int print_unsigned_digit(unsigned int num, int *count);
+int print_digit_octal(unsigned int num, int *count);
+int call_print_fn(char ch, va_list ap);
 
-/**
- * struct identifierStruct - structure definition of a printTypeStruct
- * @indentifier: type
- * @printer: function to print
- */
-
-typedef struct identifierStruct
-
-{
-	char *indentifier;
-	int (*printer)(va_list);
-
-} identifierStruct;
 #endif
