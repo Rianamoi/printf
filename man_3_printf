@@ -1,17 +1,48 @@
-Description
+.\" Manpage for _printf
+.TH man 8 " October 2022" "1.0" "_printf man page"
+.SH NAME
+_printf - format and write a string, character or integer to stdout
+.SH SYNOPSIS
+#include "holberton.h"
+.br
+#include <stdarg.h>
+.br
+#include <stdlib.h>
+.br
+.br
+int _printf(const char *format, ...)
 
-The function  int _printf(const char *format, ...) sends formatted output to stdout.
+.SH DESCRIPTION
+The function _printf() produces output according to format described below, writes output to stdout.
 
+.SS Return value
+.br
+upon successful return, this function returns a number of characters
+printed (excluding the null byte)
 
+if an output error is encountered, a negative value is returned
 
-Declaration
+.SS The format string
+It is a character string, composed of zero or more directives, ordinary characters which are copied and unchanged to the stdout, each conversion specifier is introduced with %
 
-Following is the declaration for printf() function.
+.br
+.SH BUGS
+No known bugs
+.SS colphon
+.SH Example:
+_printf("%s", text);
 
+In the Example print the value of text with %s give the format of text.
 
+.B The conversion specifiers
 
-int printf(const char *format, ...)
-
-Parameters
-
-format − This is the string that contains the text to be written to stdout. It can optionally contain embedded format tags that are replaced by the values specified in subsequent additional arguments and formatted as requested. Format tags prototype is %[flags][width][.precision][length]specifier
+.IP %c
+- prints character.
+.IP %s
+- prints string.
+.IP %%
+- prints percentage symbol.
+.IP %d
+- prints decimal.
+.IP %i
+- prints integer number.
