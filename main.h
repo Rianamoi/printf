@@ -8,7 +8,7 @@ int _printf(const char *format, ...);
 int print_char(va_list arg);
 int print_str(va_list arg);
 int print_int(va_list arg);
-int print_address(va_list arg);
+int print_ptr(va_list arg);
 int print_unsigned(va_list arg);
 int print_unsignedToBinary(va_list arg);
 int print_oct(va_list arg);
