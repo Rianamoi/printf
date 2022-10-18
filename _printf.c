@@ -70,27 +70,24 @@ int _printf(const char *format, ...)
 			}
 			if (format[i + 1] == '%')
 			{
-				_putchar('%');	
+				_putchar('%');
 				charPrinted++;
 				i++;
 				continue;
 			}
 			if (format[i + 1] == '\0')
 				return (-1);
-
 			identifierPrinted = printIdentifiers(format[i + 1], arg);
-
 			if (identifierPrinted == -1 || identifierPrinted != 0)
 				i++;
-
 			if (identifierPrinted > 0)
 				charPrinted += identifierPrinted;
-																				if (identifierPrinted == 0)
+			if (identifierPrinted == 0)
 			{
 				_putchar('%');
 				charPrinted++;
 			}
-																			}
+		}
 		va_end(arg);
 		return (charPrinted);
-}	
+}
