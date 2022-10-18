@@ -37,7 +37,6 @@ int printIdentifiers(char next, va_list arg)
 		return (0);
 }
 
-
 /**
  * _printf - mimic printf from stdio
  * Description: produces output according to a format
@@ -53,9 +52,7 @@ int _printf(const char *format, ...)
 		unsigned int i;
 
 		int identifierPrinted = 0, charPrinted = 0;
-
 		va_list arg;
-
 		va_start(arg, format);
 		if (format == NULL)
 			return (-1);
