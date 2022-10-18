@@ -1,2 +1,4 @@
-main.c
-a.out
+#!/bin/bash
+
+*main.c
+*.out
