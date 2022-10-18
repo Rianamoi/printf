@@ -17,7 +17,7 @@ int printIdentifiers(char next, va_list arg)
 
 	identifierStruct functs[] = {
 		{"c", print_char},
-		{"p", print_ptr},
+		{"p", print_address},
 		{"s", print_str},
 		{"d", print_int},
 		{"i", print_int},
