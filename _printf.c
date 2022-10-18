@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-
+#include <stdarg.h>
 
 /**
  * printIdentifiers - prints special characters
