@@ -2,7 +2,7 @@
 
 /**
  * convert - converts number and base into string
- * @num: input number.
+ * @num: input number
  * @base: input base
  * @lowercase: flag if hexa values need to be lowercase
  * Return: result string
