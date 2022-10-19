@@ -3,7 +3,7 @@
 /**
  * print_address - prints address of input in hexa format
  * @l: va_list arguments from _printf
- * @f: ponter to the struct flags that determines
+ * @f: pointer to the struct flags that determines
  * if a flag is padded to -print.
  * Return: number of char printed
  */
