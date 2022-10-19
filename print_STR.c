@@ -3,12 +3,12 @@
 #include <stdio.h>
 
 /**
- * print_STR - prints a string with a `S` (upper case) specificer
+ * print_str - prints a string with a `s` (lower case) specifier
  * @arg: argument
  * Return: number of character printed
  */
 
-int print_STR(va_list arg)
+int print_str(va_list arg)
 
 {
 	int i;
@@ -20,19 +20,7 @@ int print_STR(va_list arg)
 	else if (*str == '\0')
 		return (-1);
 	for (i = 0; str[i]; i++)
-	{
-		if ((str[i] < 32 && str[i] > 0) || str[i] >= 127)
-		{
-			_putchar('\\');
-			_putchar('x');
-			if (i < 16)
-				_putchar('0');
-
-			print_unsignedIntToHex(str[i], 'A');
-		}
-		else
-			_putchar(str[i]);
-	}
+		_putchar(str[i]);
 
 	return (i);
 }

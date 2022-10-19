@@ -5,7 +5,7 @@
 /**
  *  * print_oct - prints number in octal base.
  *   * @arg: list containing octal number to be printed
- *    * Return: number of octals printed
+ *    * Return: number of octals printed.
  *     */
 
 int print_oct(va_list arg)

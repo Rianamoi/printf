@@ -4,7 +4,7 @@
 
 /**
  * print_unsigned - prints an unsigned int.
- * @arg: argument
+ * @arg: argument.
  * Return: 0
  */
 

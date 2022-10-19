@@ -4,7 +4,7 @@
 
 /**
  * print_unsignedToBinary - prints an integer.
- * @arg: argument
+ * @arg: argument.
  * Return: 0
  */
 

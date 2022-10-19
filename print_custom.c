@@ -41,7 +41,7 @@ int print_bigS(va_list l, flags_t *f)
  * print_rev - prints a string in reverse
  * @l: argument from _printf
  * @f: pointer to the struct flags that determines
- * if a flag is passed to _printf
+ * if a flag is passed to _printf.
  * Return: length of the printed string
  */
 int print_rev(va_list l, flags_t *f)
