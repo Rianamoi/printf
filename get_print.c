@@ -8,7 +8,7 @@
  * func_arr[] to find a match between the specifier passed to _printf
  * and the first element of the struc, and then the approriate
  * printing function.
- * Return: a pointer to the matching printing function
+ * Return: a pointer to the matching printing function.
  */
 int (*get_print(char s))(va_list, flags_t *)
 {
